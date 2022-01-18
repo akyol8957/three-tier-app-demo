@@ -25,6 +25,8 @@ module "vpc" {
   tags = {
     Terraform = "true"
     Environment = "dev"
+    CreatedBy   = "DevOps"
+    Quarter = "Q1"
   }
 }
 
