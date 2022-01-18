@@ -4,12 +4,12 @@ node {
 }
 	stage("Init"){
         
-        ws("VPC/") {
+        dir("VPC/") {
 		    sh "terraform init"
     }
 }
 	stage("Apply"){
-		ws("VPC/") {
+		dir("VPC/") {
 		    sh "terraform apply -auto-approve"
     }
 }
